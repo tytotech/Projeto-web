@@ -1,0 +1,29 @@
+<table class="table">
+     <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Tafera</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Data Inicio</th>
+            <th scope="col">Data Fim</th>
+            <th scope="col">Prioridade</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    {{#data}}
+    <tbody>
+        <tr>
+            <th scope="row">{{id}}</th>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+            <td>{{start_date}}</td>
+            <td>{{end_date}}</td>
+            <td>{{priority}}</td>
+            <td>
+                <a href="deletar/{{id}}" class="deletar"><i class="btn btn-danger fa fa-trash"></i></a>
+                <a href="update/{{id}}"><i class="btn btn-primary fa fa-wrench"></i></a>
+            </td>
+        </tr>
+    </tbody>
+    {{/data}}
+</table>

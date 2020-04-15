@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="col-12">
+        <h1>Cadastrar tarefa</h1>
+        <form name="form" action="controllerForm" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="id" id="id" placeholder="ID">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="name" id="name" placeholder="Tafera">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="description" id="description" placeholder="Descrição">
+            </div>
+            <div class="form-group">
+                <input type="date" class="form-control" name="start_date" id="start_date" placeholder="">
+            </div>
+            <div class="form-group">
+                <input type="date" class="form-control" name="end_date" id="end_date" placeholder="">
+            </div>
+            <div class="form-group">
+                <select name="priority" id="priority" class="form-control" placeholder="Selecionar">
+                    <option selected disabled>Selecionar</option>
+                    <option value="Urgente">Urgente</option>
+                    <option value="Normal">Normal</option>
+                </select>
+            </div>
+            <button type="submit" name="btnSubmit" id="btnSumit" class="btn btn-outline-primary">Salvar</button>
+        </form>
+    </div>
+</div>
